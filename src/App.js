@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Time from './components/time';
+import addUser from './components/addUser';
 import './App.css';
 
 class App extends Component {
@@ -29,6 +30,7 @@ class App extends Component {
     return (
       <div className="App">
           <Time onDuty={this.state.onDuty} clockFunc={this.clockingHandler}/>
+          <addUser/>
       </div>
     );
   }
